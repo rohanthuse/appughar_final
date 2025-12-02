@@ -1,14 +1,17 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { PlannerResponse } from "../types";
 
-const apiKey = process.env.API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
-
 export const generateItinerary = async (groupDescription: string): Promise<PlannerResponse | null> => {
+  // Access process.env inside the function scope to ensure it's accessed at runtime
+  // and prevent crashes during module evaluation if the environment is not yet ready.
+  const apiKey = process.env.API_KEY;
+  
   if (!apiKey) {
-    console.error("API Key is missing");
+    console.error("API Key is missing in process.env");
     return null;
   }
+
+  const ai = new GoogleGenAI({ apiKey });
 
   const prompt = `
     You are "Appu", the friendly elephant mascot and guide for Appu Ghar Pune (a famous amusement park in India).
