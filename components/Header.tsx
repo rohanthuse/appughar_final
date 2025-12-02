@@ -25,7 +25,7 @@ const Header: React.FC = () => {
           <Link to="/about" className="hover:text-appu-pink transition-colors">About Us</Link>
           <Link to="/rides" className="hover:text-appu-blue transition-colors">Rides</Link>
           <Link to="/tickets" className="hover:text-appu-purple transition-colors">Tickets</Link>
-          <a href="/#planner" className="hover:text-appu-yellow-dark transition-colors">AI Planner</a>
+          <Link to="/planner" className="hover:text-appu-yellow-dark transition-colors">AI Planner</Link>
           <Link to="/faq" className="hover:text-appu-green transition-colors">FAQ</Link>
           
           <Link 
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
           <Link to="/about" className="text-lg font-bold text-gray-700 py-2 border-b border-gray-100" onClick={() => setIsOpen(false)}>About Us</Link>
           <Link to="/rides" className="text-lg font-bold text-gray-700 py-2 border-b border-gray-100" onClick={() => setIsOpen(false)}>Rides</Link>
           <Link to="/tickets" className="text-lg font-bold text-gray-700 py-2 border-b border-gray-100" onClick={() => setIsOpen(false)}>Tickets</Link>
-          <a href="/#planner" className="text-lg font-bold text-gray-700 py-2 border-b border-gray-100" onClick={() => setIsOpen(false)}>AI Planner</a>
+          <Link to="/planner" className="text-lg font-bold text-gray-700 py-2 border-b border-gray-100" onClick={() => setIsOpen(false)}>AI Planner</Link>
           <Link to="/faq" className="text-lg font-bold text-gray-700 py-2 border-b border-gray-100" onClick={() => setIsOpen(false)}>FAQ</Link>
           <Link 
             to="/contact" 

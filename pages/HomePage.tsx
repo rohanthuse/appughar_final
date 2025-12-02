@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Hero from '../components/Hero';
-import AiPlanner from '../components/AiPlanner';
 import ParkInfo from '../components/ParkInfo';
 import RideCard from '../components/RideCard';
 import SpecialEvents from '../components/SpecialEvents';
@@ -43,7 +41,6 @@ const HomePage: React.FC = () => {
       {/* New Special Events Section */}
       <SpecialEvents />
 
-      <AiPlanner />
       <ParkInfo />
     </>
   );

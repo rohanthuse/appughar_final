@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage';
 import FaqPage from './pages/FaqPage';
 import TicketsPage from './pages/TicketsPage';
 import RidesPage from './pages/RidesPage';
+import AiPlannerPage from './pages/AiPlannerPage';
 import { Phone, Mail, Instagram, Facebook, Twitter, MapPin, Headphones, PhoneCall } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -21,6 +22,7 @@ const App: React.FC = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/rides" element={<RidesPage />} />
             <Route path="/tickets" element={<TicketsPage />} />
+            <Route path="/planner" element={<AiPlannerPage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
